@@ -1,11 +1,10 @@
 ﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.Products.IEntitySets;
+using Microsoft.EntityFrameworkCore;
 using CleanArchitecture.Domain.Product.Entites;
 using CleanArchitecture.Persistence.EF;
-using CleanArchitecture.Persistence.EF.EntitySets;
-using Microsoft.EntityFrameworkCore;
+using CleanArchitecture.Application.Products.IEntitySets;
 
-namespace Persistence.EF.EntitySets
+namespace CleanArchitecture.Persistence.EF.EntitySets
 {
     public class ProductSet : EntitySet<Product>, IProductSet
     {

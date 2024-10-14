@@ -15,7 +15,7 @@ namespace CleanArchitecture.Application.Common.Messaging
     {
         public string? UserName { get; set; }
         public string? UserId { get; set; }
-        public string RequestName => this.GetType().Name;
+        public string RequestName => GetType().Name;
         public RequestType RequestType { get; protected init; }
     }
 

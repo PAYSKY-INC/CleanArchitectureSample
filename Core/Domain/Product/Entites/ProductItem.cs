@@ -1,5 +1,5 @@
-﻿using CleanArchitecture.Domain.Common;
-using CleanArchitecture.Domain.Product.Events;
+﻿using CleanArchitecture.Domain.Product.Events;
+using CleanArchitecture.Domain.Common;
 
 namespace CleanArchitecture.Domain.Product.Entites
 {

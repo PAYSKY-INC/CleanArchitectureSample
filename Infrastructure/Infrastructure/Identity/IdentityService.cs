@@ -1,5 +1,4 @@
-﻿using CleanArchitecture.Application.Common.Abstracts;
-using CleanArchitecture.Application.Common.Abstracts.Account;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
 using CleanArchitecture.Application.Common.Errors;
 using CleanArchitecture.Application.Common.Messaging;
 using CleanArchitecture.Application.Users.Commands.Dtos;
@@ -32,7 +31,7 @@ namespace CleanArchitecture.Infrastructure.Identity
             _jwtProvider = jwtProvider;
             _userClaimsPrincipalFactory = userClaimsPrincipalFactory;
             _authorizationService = authorizationService;
-            this.CurrentUser = currentUser;
+            CurrentUser = currentUser;
             _roleManager = roleManager;
         }
         #endregion

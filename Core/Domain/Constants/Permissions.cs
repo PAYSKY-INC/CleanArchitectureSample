@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Common.SystemTypes.Extensions;
+﻿using Common.SystemTypes.Extensions;
 
 namespace CleanArchitecture.Domain.Constants
 {

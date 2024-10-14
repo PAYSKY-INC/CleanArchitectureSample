@@ -1,6 +1,4 @@
-﻿
-
-using CleanArchitecture.Application.Carts.IEntitySets;
+﻿using CleanArchitecture.Application.Carts.IEntitySets;
 using CleanArchitecture.Application.Categories.IEntitySets;
 using CleanArchitecture.Application.Common.Abstracts.Account;
 using CleanArchitecture.Application.Common.Abstracts.Persistence;

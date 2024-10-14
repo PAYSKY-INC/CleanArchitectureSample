@@ -1,7 +1,7 @@
 ﻿using CleanArchitecture.Application.Common.Messaging;
 using CleanArchitecture.Application.Users.Commands.Dtos;
 
-namespace CleanArchitecture.Application.Common.Abstracts
+namespace CleanArchitecture.Application.Common.Abstracts.Account
 {
     public interface IIdentityService
     {

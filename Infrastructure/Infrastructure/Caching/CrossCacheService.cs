@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
 using CleanArchitecture.Application.Common.Caching;
-using CleanArchitecture.Common.Operation;
+using Common.Operation;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 

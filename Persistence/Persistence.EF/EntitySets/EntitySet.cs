@@ -1,13 +1,14 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
-using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Common.Linq.Model;
-using CleanArchitecture.Domain.Common;
+﻿using CleanArchitecture.Application.Common.Exceptions;
 using Common.Linq;
+using Common.Linq.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using System.ComponentModel;
 using System.Linq.Expressions;
 using static Common.Linq.IQueryableExtension;
+using CleanArchitecture.Domain.Common;
+using CleanArchitecture.Persistence.EF;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
 
 namespace CleanArchitecture.Persistence.EF.EntitySets
 {

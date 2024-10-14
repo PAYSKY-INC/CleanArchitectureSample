@@ -22,7 +22,7 @@ namespace CleanArchitecture.Application.Common.Messaging
         #region Constructor
         protected BaseRequestHandler(IServiceProvider serviceProvider)
         {
-            this.ServiceProvider = serviceProvider;
+            ServiceProvider = serviceProvider;
         }
         #endregion
 

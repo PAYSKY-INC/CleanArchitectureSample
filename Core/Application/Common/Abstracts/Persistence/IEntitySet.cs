@@ -1,5 +1,5 @@
-﻿using CleanArchitecture.Common.Linq.Model;
-using CleanArchitecture.Domain.Common;
+﻿using CleanArchitecture.Domain.Common;
+using Common.Linq.Model;
 using Microsoft.EntityFrameworkCore.Query;
 using System.ComponentModel;
 using System.Linq.Expressions;

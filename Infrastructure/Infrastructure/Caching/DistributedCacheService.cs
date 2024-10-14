@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Application.Common.Abstracts.Caching;
-using CleanArchitecture.Common.Operation;
 using CleanArchitecture.Infrastructure.Caching.RedisSetupConfigurationOptions;
+using Common.Operation;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -35,10 +35,10 @@ public class DistributedCacheService : IDistributedCacheService
 
     #region Constructor
     public DistributedCacheService(IOptions<RedisOptions> options,
-                                   IConnectionMultiplexer connection,
+                                   IRedisConnection redisConnection,
                                    ILogger<DistributedCacheService> logger)
     {
-        Connection = connection;
+        Connection = redisConnection.Connection;
         _logger = logger;
         _db = Connection.GetDatabase();
 
@@ -62,6 +62,7 @@ public class DistributedCacheService : IDistributedCacheService
         }
         T? value = JsonConvert.DeserializeObject<T>(cachedValue);
         _logger.LogInformation("Caching: Retrieved the cached value of key: {Key} from  Redis ", key);
+      
         return value;
     }
 

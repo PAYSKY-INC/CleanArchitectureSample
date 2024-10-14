@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Abstracts.Persistence;
+﻿using CleanArchitecture.Application.Common.Security;
+using CleanArchitecture.Domain.Product.Events;
+using CleanArchitecture.Application.Common.Abstracts.Persistence;
 using CleanArchitecture.Application.Common.Messaging;
 using CleanArchitecture.Application.Common.Models;
-using CleanArchitecture.Application.Common.Security;
 using CleanArchitecture.Domain.Constants;
-using CleanArchitecture.Domain.Product.Events;
 
 namespace CleanArchitecture.Application.Products.Commands.DeleteProduct
 {
@@ -39,7 +39,7 @@ namespace CleanArchitecture.Application.Products.Commands.DeleteProduct
         {
             int affectedRows = 0;
 
-            var product = await DbContext.Products.GetByIdAsync(request.Id);
+            var product = await DbContext.Products.GetByIdAsync(request.Id, cancellationToken);
 
             if (product is null)
             {

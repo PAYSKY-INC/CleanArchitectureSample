@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Application.Common.Abstracts;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
 using FluentValidation;
 
 namespace CleanArchitecture.Application.Users.Commands.Login

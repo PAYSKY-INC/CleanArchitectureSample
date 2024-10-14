@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Application.Common.Abstracts;
+﻿using CleanArchitecture.Application.Common.Abstracts.Account;
 using CleanArchitecture.Application.Common.Errors;
 using CleanArchitecture.Application.Common.Messaging;
 using CleanArchitecture.Application.Common.Security;
