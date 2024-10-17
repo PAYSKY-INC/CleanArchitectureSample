@@ -1,15 +1,13 @@
-﻿using CleanArchitecture.Domain.Common;
-using CleanArchitecture.Domain.Product.Entites;
-
-namespace CleanArchitecture.Domain.Cart.Entities
+﻿namespace CleanArchitecture.Domain.Cart.Entities
 {
-    public class CartItem : AuditableEntity, IAggregateRoot
-    {
+    using CleanArchitecture.Domain.Common;
+    using CleanArchitecture.Domain.Product.Entites;
 
+    public class CartItem : AuditableEntity
+    {
         #region Consructor
         private CartItem()
         {
-
         }
         #endregion
 

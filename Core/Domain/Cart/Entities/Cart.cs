@@ -50,11 +50,7 @@ namespace CleanArchitecture.Domain.Cart.Entities
         }
         public void RemoveCartItem(CartItem cartItem)
         {
-            if (cartItems.Contains(cartItem))
-            {
-                cartItems.Remove(cartItem);
-            }
-            else
+            if (!cartItems.Remove(cartItem))
             {
                 throw new ArgumentException("Not exist");
             }
