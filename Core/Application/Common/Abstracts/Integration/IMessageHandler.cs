@@ -1,4 +1,4 @@
-﻿namespace SearchService.Application.Common.Abstracts.Ports
+﻿namespace CleanArchitecture.Application.Common.Abstracts.Integration
 {
     public interface IMessageHandler<in T>
     {
