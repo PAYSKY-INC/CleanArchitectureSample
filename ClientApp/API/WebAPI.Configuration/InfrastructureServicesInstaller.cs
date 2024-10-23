@@ -21,8 +21,10 @@ namespace CleanArchitecture.WebAPI.Configuration
                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                                     b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName))
                .AddInterceptors(sp.GetServices<ISaveChangesInterceptor>()));
+
             services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
             services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
+            services.AddScoped<ISaveChangesInterceptor, SoftDeleteInterceptor>();
             services.ConfigureOptions<RedisOptionsSetup>();
 
 
